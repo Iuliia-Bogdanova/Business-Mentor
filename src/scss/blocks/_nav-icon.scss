@@ -1,14 +1,15 @@
 /* Nav Icon */
 .mobile-nav-btn {
-	--time: 0.1s;
+	--time: 0.2
+	s;
 
-	--width: 40px;
-	--height: 30px;
+	--width: 23px;
+	--height: 2px;
 
-	--line-height: 4px;
-	--spacing: 6px;
+	--line-height: 2px;
+	--spacing: 4px;
 
-	--color: #000;
+	--color: var(--page-bg);
 	--radius: 4px;
 
 	/* Fixed height and width */
