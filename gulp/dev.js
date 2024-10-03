@@ -64,7 +64,7 @@ gulp.task('sass:dev', function () {
 
 gulp.task('images:dev', function () {
 	return gulp
-		.src('./src/img/**/*')
+		.src('./src/assets/img/**/*')
 		.pipe(changed('./build/img/'))
 		// .pipe(imagemin({ verbose: true }))
 		.pipe(gulp.dest('./build/img/'));
@@ -72,7 +72,7 @@ gulp.task('images:dev', function () {
 
 gulp.task('fonts:dev', function () {
 	return gulp
-		.src('./src/fonts/**/*')
+		.src('./src/assets/fonts/**/*')
 		.pipe(changed('./build/fonts/'))
 		.pipe(gulp.dest('./build/fonts/'));
 });
