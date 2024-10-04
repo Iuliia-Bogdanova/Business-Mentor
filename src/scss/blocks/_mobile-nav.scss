@@ -31,13 +31,22 @@
 	flex-direction: column;
 	align-items: center;
 	row-gap: 20px;
-	font-size: 26px;
+	font-size: 18px;
 
 	& .active {
 		opacity: 0.5;
+		cursor: default; 
 	}
 
 	& .logo-premium {
 		color: var(--accent-color);
 	}
 }
+
+// .nav__list-item {
+// 	transition: text-shadow 0.3s ease;
+// }
+
+// .nav__list-item a:not(.active):hover {
+// 	text-shadow: 1px 1px 4px var(--page-bg);
+// }
