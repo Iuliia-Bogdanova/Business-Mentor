@@ -13,3 +13,9 @@ body {
 	min-width: 320px;
 	padding: 0 20px;
 }
+
+.divider {
+	height: 2px;
+	background: var(--header-bg);
+	opacity: 0.2;
+}
