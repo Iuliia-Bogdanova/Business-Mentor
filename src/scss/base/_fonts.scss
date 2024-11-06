@@ -1,14 +1,39 @@
-// @font-face {
-//     font-family: "Ubuntu", sans-serif;
-//     src: url(../../assets/fonts/Ubuntu-Regular.woff2);
-// }
+@font-face {
+    font-family: "SF UI Display", sans-serif;
+    src: url(../../assets/fonts/SFUIDisplay-Regular.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
 
-// @font-face {
-//     font-family: "Ubuntu", sans-serif;
-//     src: url(../../assets/fonts/Ubuntu-Medium.woff2);
-// }
+@font-face {
+    font-family: "SF UI Display", sans-serif;
+    src: url(../../assets/fonts/SFUIDisplay-Medium.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
 
-// @font-face {
-//     font-family: "Ubuntu", sans-serif;
-//     src: url(../../assets/fonts/Ubuntu-Bold.woff2);
-// }
+@font-face {
+    font-family: "SF UI Display", sans-serif;
+    src: url(../../assets/fonts/SFUIDisplay-Semibold.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF UI Display", sans-serif;
+    src: url(../../assets/fonts/SFUIDisplay-Bold.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Mazzard M", sans-serif;
+    src: url(../../assets/fonts/MazzardM-Bold.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
