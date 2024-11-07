@@ -1,14 +1,23 @@
 :root {
-	--font-main: "SF UI Display", sans-serif;
+	--font-family: "SF UI Display", sans-serif;
 	--font-second: "Mazzard", sans-serif;
 	// --font-weight-regular: 400;
 	// --font-weight-medium: 500;
 	// --font-weight-semibold: 600;
 	// --font-weight-bold: 700;
 
-	--page-bg: #fff;
-	--header-bg: #9564aa;
-	--text-color: #000;
-	--accent-color: #ffcf2d;
-	--fuchsia-color: #c15ca1;
+	--page-bg: #f3f7fb;
+	--card-bg: #fff;
+	--text-color: #0e0f11;
+	--second-text-color: #c3c8cf;
+	--accent-color-dark: rgb(224, 179, 48); /* #E0B330 */
+  --accent-color-light: rgb(251, 238, 136); /* #FBEE88 */
+	// --accent-color-dark: #E0B330;
+	// --accent-color-light: #FBEE88;
+
+	--card-accent-border: linear-gradient(
+    to bottom,
+		rgba(var(--accent-color-dark), 1) 0%,
+		rgba(var(--accent-color-light), 1) 50%,
+		rgba(var(--accent-color-dark), 1) 100%);
 }

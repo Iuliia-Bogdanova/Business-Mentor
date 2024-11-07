@@ -1,0 +1,27 @@
+.tariffs__title {
+    text-align: center;
+    padding: 24px 0 32px;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 24px;
+  background-color: var(--card-bg);
+}
+
+.card__base {
+    padding: 3px;
+    background: linear-gradient(
+        to bottom,
+        rgba(224, 179, 48, 1) 0%,
+        rgba(251, 238, 136, 1) 50%,
+        rgba(224, 179, 48, 1) 100%
+    );
+}
+
+.card__base-inner {
+    border-radius: 17px; 
+    background-color: var(--card-bg);
+    padding: 21px;
+}
+
