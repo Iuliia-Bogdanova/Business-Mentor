@@ -1,12 +1,41 @@
 .tariffs__title {
     text-align: center;
-    padding: 24px 0 32px;
+    padding: 24px 0 6px;
 }
 
+.tariffs__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__base-outer {
+    border-radius: 12px 12px 0 0;
+    padding: 6px 10px;
+    background: linear-gradient(
+        to bottom,
+        rgba(251, 238, 136, 1) 0%,
+        rgba(224, 179, 48, 1) 100%
+    );
+}
+
+.base-outer {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--card-bg);
+}
+
+
+
 .card {
-  border-radius: 20px;
-  padding: 24px;
-  background-color: var(--card-bg);
+    width: 100%;
+    border-radius: 20px;
+    padding: 24px;
+    background-color: var(--card-bg);
+    margin-bottom: 12px;
 }
 
 .card__base {
@@ -14,7 +43,7 @@
     background: linear-gradient(
         to bottom,
         rgba(224, 179, 48, 1) 0%,
-        rgba(251, 238, 136, 1) 50%,
+        rgba(251, 238, 136, 1) 51%,
         rgba(224, 179, 48, 1) 100%
     );
 }
@@ -25,3 +54,141 @@
     padding: 21px;
 }
 
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.card__icon {
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 16px;
+}
+
+.icon__base {
+    background-image: url(../img/base.svg);
+}
+
+.icon__percent {
+    background-image: url(../img/percent.svg);
+}
+
+.icon__consult {
+    background-image: url(../img/consult.svg);
+}
+
+.card__title {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 120%;
+    padding-bottom: 4px;
+}
+
+.card__subtitle {
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--third-text-color);
+    margin-bottom: 16px;
+}
+
+.card__pay {
+    width: 100%;
+    border-radius: 16px;
+    padding: 20px 16px 16px;
+    margin: 0 24px 4px;
+    z-index: 2;
+}
+
+.card__pay-base {
+    position: relative;
+    background: linear-gradient(
+        to bottom,
+        rgba(224, 179, 48, 1) 0%,
+        rgba(251, 238, 136, 1) 51.1%,
+        rgba(224, 179, 48, 1) 100%
+    );
+    color: var(--card-bg);
+    z-index: 1;
+}
+
+.card__pay-base::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/vector-yellow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    pointer-events: none; 
+    z-index: 2;
+}
+
+.sum {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 4px;
+}
+
+.time {
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 16px;
+}
+
+.card__pay-simple {
+    background: var(--page-bg);
+    color: var(--text-color);
+}
+
+.time__pay-simple {
+    color: var(--fourth-text-color);
+}
+
+button.select {
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    padding: 15px 0;
+    background: var(--text-color);
+    // z-index: 10;
+    transition: all 0.3s ease;
+}
+
+button.select-base {
+    z-index: 10;
+}
+
+.select-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--card-bg);
+}
+
+button.select:hover .select-text {
+    opacity: 0.6;
+}
+
+button.select:active {
+    scale: 0.95;
+}
+
+button.select:disabled {
+    opacity: 0.6;
+    pointer-events: none; 
+    z-index: 10;
+}
+
+.unclickable {
+    pointer-events: none;
+}

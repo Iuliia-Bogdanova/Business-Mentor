@@ -1,0 +1,1 @@
+!function(){const c=document.querySelectorAll(".select");c.forEach((e=>{e.addEventListener("click",(function(){c.forEach((c=>{c!==e&&c.classList.add("unclickable")})),e.disabled=!0;const t=e.closest(".card").querySelector(".card__title").textContent;console.log("Вы выбрали тариф: "+t)}))}))}();
