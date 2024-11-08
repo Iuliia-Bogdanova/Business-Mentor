@@ -28,8 +28,6 @@
     color: var(--card-bg);
 }
 
-
-
 .card {
     width: 100%;
     border-radius: 20px;
@@ -55,6 +53,7 @@
 }
 
 .card-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,7 +61,7 @@
     text-align: center;
 }
 
-.card__icon {
+.card__icon[aria-label] {
     width: 64px;
     height: 64px;
     background-repeat: no-repeat;
@@ -98,6 +97,7 @@
 }
 
 .card__pay {
+    position: relative;
     width: 100%;
     border-radius: 16px;
     padding: 20px 16px 16px;
@@ -122,11 +122,13 @@
     left: 0;
     right: 0;
     bottom: 0;
+    border-radius: 16px;
     background-image: url(../img/vector-yellow.svg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.5;
-    pointer-events: none; 
+    pointer-events: none;
+    z-index: 1;
 }
 
 .sum {
@@ -193,3 +195,112 @@ button.select:disabled {
 .unclickable {
     pointer-events: none;
 }
+
+.card__pay-second {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    border-radius: 12px;
+    padding: 0;
+}
+
+.debt[aria-label] {
+    position: relative;
+    width: 220px;
+    height: 52px;
+    border-top-left-radius: 12px; 
+    border-bottom-left-radius: 12px; 
+    background-image: url(../img/card-yellow.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+}
+
+.guarantee {
+    position: relative;
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 110%;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.tooltip-question[aria-label] {
+    position: relative;
+    width: 14px;
+    height: 20px;
+    padding-right: 36px;
+    background-image: url(../img/quest-yellow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.card__pay-second--blue {
+    background: var(--bg-blue);
+}
+
+.card__pay-second--blue::before {
+    background-image: url(../img/vector-blue.svg);
+}
+
+.debt--blue[aria-label] {
+    background-image: url(../img/card-blue.svg);
+    background-position: left;
+}
+
+.tooltip-content {
+    display: none;
+    position: relative;
+    // position: absolute;
+    width: 302px;
+    height: 76px;
+    border-radius: 10px;
+    padding: 8px 12px;
+    margin-left: 8px;
+    margin-top: -10px;
+    background: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--card-bg);
+    text-align: left;
+    z-index: 10;
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 0.3s ease, visibility 0s 0.3s; 
+}
+
+.tooltip-content::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 11px;
+    top: -9px;
+    left: 268px;
+    background-image: url(../img/arrow.svg);
+    z-index: 10;
+}
+
+// .tooltip-question:hover + .tooltip-content {
+//     display: block;
+// }
+
