@@ -1,26 +1,16 @@
 :root {
 	--font-family: "SF UI Display", sans-serif;
 	--third-family: "Mazzard", sans-serif;
-	// --font-weight-regular: 400;
-	// --font-weight-medium: 500;
-	// --font-weight-semibold: 600;
-	// --font-weight-bold: 700;
 
 	--page-bg: #f3f7fb;
 	--card-bg: #fff;
 	--bg-blue: #2557f6;
+	--counter-bg: #ffe1e0;
+	--counter-color: #f24c41;
 	--text-color: #0e0f11;
 	--second-text-color: #c3c8cf;
 	--third-text-color: #8f959b;
 	--fourth-text-color: #111215;
 	--accent-color-dark: rgb(224, 179, 48); /* #E0B330 */
   --accent-color-light: rgb(251, 238, 136); /* #FBEE88 */
-	// --accent-color-dark: #E0B330;
-	// --accent-color-light: #FBEE88;
-
-	--card-accent-border: linear-gradient(
-    to bottom,
-		rgba(var(--accent-color-dark), 1) 0%,
-		rgba(var(--accent-color-light), 1) 50%,
-		rgba(var(--accent-color-dark), 1) 100%);
 }

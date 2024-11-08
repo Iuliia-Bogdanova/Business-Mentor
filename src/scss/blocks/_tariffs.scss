@@ -61,6 +61,39 @@
     text-align: center;
 }
 
+.counter {
+    position: absolute;
+    display: inline-block;
+    top: -8px;
+    left: -4px;
+    border-radius: 717px;
+    padding: 5px 8px 5px 20px;
+    background: var(--counter-bg);
+}
+
+.counter-item {
+    position: relative;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: center;
+    align-items: center;
+    color: var(--counter-color);
+}
+
+.counter-item::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -14px;
+    width: 11px;
+    height: 11px;
+    background-image: url(../img/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .card__icon[aria-label] {
     width: 64px;
     height: 64px;
@@ -90,8 +123,6 @@
 }
 
 .card__subtitle {
-    font-size: 14px;
-    line-height: 140%;
     color: var(--third-text-color);
     margin-bottom: 16px;
 }
@@ -142,8 +173,6 @@
 
 .time {
     position: relative;
-    font-size: 14px;
-    line-height: 140%;
     margin-bottom: 16px;
     z-index: 10;
 }
@@ -247,7 +276,7 @@ button.select:disabled {
     width: 14px;
     height: 20px;
     padding-right: 36px;
-    background-image: url(../img/quest-yellow.svg);
+    background-image: url(../img/question.svg);
     background-repeat: no-repeat;
     background-position: center;
     z-index: 10;
@@ -269,18 +298,15 @@ button.select:disabled {
 
 .tooltip-content {
     display: none;
-    position: relative;
-    // position: absolute;
+    position: absolute;
     width: 302px;
     height: 76px;
     border-radius: 10px;
     padding: 8px 12px;
-    margin-left: 8px;
-    margin-top: -10px;
+    left: 0;
+    top: 346px;
     background: var(--text-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 140%;
     color: var(--card-bg);
     text-align: left;
     z-index: 10;
@@ -300,7 +326,41 @@ button.select:disabled {
     z-index: 10;
 }
 
-// .tooltip-question:hover + .tooltip-content {
-//     display: block;
-// }
+.steps-list {
+    padding-top: 16px;
+}
+
+.steps-list li {
+    position: relative;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.steps-list li::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    background-image: url(../img/confirm.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.step-item:not(:last-child) {
+    padding-bottom: 8px;
+}
+
+.banks-icon {
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+    background-image: url(../img/banks.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
 

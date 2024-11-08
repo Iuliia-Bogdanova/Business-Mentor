@@ -17,6 +17,8 @@ body {
 	color: var(--text-color);
     font-family: var(--font-family);
     font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
 }
 
 * {
@@ -30,8 +32,6 @@ body {
 }
 
 .subtitle {
-    font-size: 14px;
-    line-height: 140%;
     text-transform: uppercase;
     color: var(--second-text-color);
     padding-bottom: 12px;

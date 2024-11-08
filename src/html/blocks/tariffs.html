@@ -19,7 +19,7 @@
                             <p class="sum">65 000 ₽</p>
                             <p class="time">Единоразовый платеж</p>
                             <button class="select select-base">
-                                <p class="select-text">Выбрать</p>
+                                <span class="select-text">Выбрать</span>
                             </button>
                         </div>
                         <div class="card__pay card__pay-base card__pay-second">
@@ -29,10 +29,20 @@
                         </div>
                         <div id="tooltip-text-1" class="tooltip-content" role="tooltip">Для Вашего спокойствия мы гарантируем возврат оплаты в случае отсутствия списания долгов после процедуры.</div>
                     </div>
+                    <ul class="steps-list">
+                        <li class="step-item">Сбор всех необходимых документов</li>
+                        <li class="step-item">Сбор всех необходимых документов</li>
+                        <li class="step-item">Взаимодействие с финансовым управляющим</li>
+                        <li class="step-item">Контроль процедуры реализации имущества</li>
+                        <li class="step-item">Поддержка и сопровождение клиента на всех этапах банкротства</li>
+                    </ul>
                 </div>
             </div>
             <div class="card card__percent">
                 <div class="card-item">
+                    <div class="counter">
+                        <div class="counter-item" id="countdown">22:36:10</div>
+                    </div>
                     <div class="card__icon icon__percent" aria-label="Иконка карточки тарифа с рассрочкой">
                     </div>
                     <h4 class="card__title">Рассрочка</h4>
@@ -40,8 +50,8 @@
                     <div class="card__pay card__pay-simple">
                         <p class="sum">3880 ₽ / мес.</p>
                         <p class="time">На 24 месяца</p>
-                        <button class="select">
-                            <p class="select-text">Выбрать</p>
+                        <button class="select" id="selectButton">
+                            <span class="select-text">Выбрать</span>
                         </button>
                     </div>
                     <div class="card__pay card__pay-base card__pay-second card__pay-second--blue">
@@ -51,6 +61,15 @@
                     </div>
                     <div id="tooltip-text-2" class="tooltip-content" role="tooltip">Для Вашего спокойствия мы гарантируем возврат оплаты в случае отсутствия списания долгов после процедуры.</div>
                 </div>
+                <ul class="steps-list">
+                    <li class="step-item">Удобные варианты рассрочки
+                        <span class="banks-icon" aria-label="Иконки банков-партнеров"></span>
+                    </li>
+                    <li class="step-item">Комфортные условия оплаты</li>
+                    <li class="step-item">Фиксированная сумма</li>
+                    <li class="step-item">Гарантия возврата средств</li>
+                    <li class="step-item">Остальное, что и в базовом тарифе</li>
+                </ul>
             </div>
             <div class="card card__consult">
                 <div class="card-item">
@@ -62,16 +81,17 @@
                         <p class="sum">Бесплатно</p>
                         <p class="time time__pay-simple">В любое время</p>
                         <button class="select">
-                            <p class="select-text">Выбрать</p>
+                            <span class="select-text">Выбрать</span>
                         </button>
                     </div>
+                    <ul class="steps-list">
+                        <li class="step-item">В любое удобное время</li>
+                        <li class="step-item">Расскажем о всех нюансах процедуры</li>
+                        <li class="step-item">Предложим варианты решения вашей проблемы</li>
+                        <li class="step-item">Подготовим рекомендаци</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
-    <!-- @@include('timer.html') -->
-    <!-- @@include('slider.html')
-    @@include('premium.html') -->
