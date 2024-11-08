@@ -102,7 +102,6 @@
     border-radius: 16px;
     padding: 20px 16px 16px;
     margin: 0 24px 4px;
-    z-index: 2;
 }
 
 .card__pay-base {
@@ -114,7 +113,6 @@
         rgba(224, 179, 48, 1) 100%
     );
     color: var(--card-bg);
-    z-index: 1;
 }
 
 .card__pay-base::before {
@@ -129,20 +127,23 @@
     background-size: cover;
     opacity: 0.5;
     pointer-events: none; 
-    z-index: 2;
 }
 
 .sum {
+    position: relative;
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
     margin-bottom: 4px;
+    z-index: 10;
 }
 
 .time {
+    position: relative;
     font-size: 14px;
     line-height: 140%;
     margin-bottom: 16px;
+    z-index: 10;
 }
 
 .card__pay-simple {
@@ -160,7 +161,7 @@ button.select {
     border-radius: 16px;
     padding: 15px 0;
     background: var(--text-color);
-    // z-index: 10;
+    z-index: 10;
     transition: all 0.3s ease;
 }
 
