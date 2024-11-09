@@ -43,6 +43,39 @@ body {
     line-height: 120%;
 }
 
+@media (min-width: $breakpoint-tablet) {
+    .container {
+        width: 704px;
+        padding: 0 12px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 45px;
+        line-height: 100%;
+    }
+}
+
+@media (min-width: $breakpoint-laptop) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .container {
+        width: 1320px;
+        padding: 0 60px;
+    }
+
+    .title {
+        font-size: 56px;
+    }
+}
+
 
 
 

@@ -1,0 +1,162 @@
+@media (min-width: $breakpoint-tablet) {
+  .tariffs__cards {
+    position: relative;
+    margin-top: 32px;
+  }  
+  
+  .card__base-outer {
+    position: absolute;
+    top: -32px;
+    left: 26px;
+    border-radius: 16px 16px 0 0;
+    padding: 6px 12px;
+  }
+
+  .base-outer {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    border-radius: 24px;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .card__base {
+    padding: 4px;
+  }
+
+  .card__base-inner {
+    border-radius: 20px; 
+    padding: 8px 8px 8px 20px;
+  }
+
+  .card__heading {
+    padding-top: 12px;
+    text-align: left;
+  }
+
+  .card__title {
+    font-size: 24px;
+    padding-bottom: 8px;
+}
+
+  .card-item {
+    width: 301px;
+  }
+
+  .card__pay {
+    border-radius: 20px;
+    padding: 84px 16px 16px;
+    margin: 0 0px 8px;
+  }
+
+  .card__pay--short {
+    padding-top: 94px;
+  }
+
+  .sum {
+    font-weight: 600;
+    font-size: 34px;
+  }
+
+  .card__pay-base::before {
+    border-radius: 20px;
+  }
+
+  button.select {
+    margin-top: 54px;
+    padding: 20px 0;
+  }
+
+  .card__pay-second {
+    height: 72px;
+    border-radius: 16px;
+    padding: 0;
+  }
+
+  .debt[aria-label] {
+    height: 72px;
+  }
+
+  .guarantee {
+    font-size: 20px;
+    padding-right: 20px;
+  }
+
+  .tooltip-question[aria-label] {
+    width: 20px;
+    height: 20px;
+    padding-right: 40px;
+  }
+
+  .tooltip-content {
+    left: 6px;
+    top: 360px;
+  }
+
+  .counter {
+    top: 16px;
+    left: 16px;
+    border-radius: 1000px;
+    padding: 6px 12px 6px 28px;
+  }
+
+.counter-item {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+.counter-item::before {
+    top: 2px;
+    left: -18px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .steps-list {
+    width: 303px;
+    margin-top: -226px;
+  }
+
+  .steps-list--short {
+    margin-top: -150px;
+  }
+
+  .steps-list li {
+    padding-left: 24px;
+  }
+
+.steps-list li::before {
+    width: 20px;
+    height: 20px;
+  }
+
+.banks-icon {
+    width: 50px;
+    height: 22px;
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+    
+}
+
+@media (min-width: $breakpoint-desktop) {
+    
+}
+
+
+
+
+
+
+
+
+
+

@@ -23,12 +23,14 @@
                 <p class="base-outer">Лучший тариф</p>
             </div>
             <div class="card card__base">
-                <div class="card__base-inner">
-                    <div class="card-item">
+                <div class="card card__base-inner">
+                    <div class="card__heading">
                         <div class="card__icon icon__base" aria-label="Иконка карточки базового тарифа">
                         </div>
                         <h4 class="card__title">Базовый тариф</h4>
                         <h5 class="card__subtitle">От любого банка без процентов и переплат</h5>
+                    </div>
+                    <div class="card-item">
                         <div class="card__pay card__pay-base">
                             <p class="sum">65 000 ₽</p>
                             <p class="time">Единоразовый платеж</p>
@@ -53,14 +55,16 @@
                 </div>
             </div>
             <div class="card card__percent">
-                <div class="card-item">
-                    <div class="counter">
-                        <div class="counter-item" id="countdown">22:36:10</div>
-                    </div>
+                <div class="card__heading">
                     <div class="card__icon icon__percent" aria-label="Иконка карточки тарифа с рассрочкой">
                     </div>
                     <h4 class="card__title">Рассрочка</h4>
                     <h5 class="card__subtitle">От любого банка без процентов и переплат</h5>
+                </div>
+                <div class="card-item">
+                    <div class="counter">
+                        <div class="counter-item" id="countdown">22:36:10</div>
+                    </div>
                     <div class="card__pay card__pay-simple">
                         <p class="sum">3880 ₽ / мес.</p>
                         <p class="time">На 24 месяца</p>
@@ -86,25 +90,27 @@
                 </ul>
             </div>
             <div class="card card__consult">
-                <div class="card-item">
+                <div class="card__heading">
                     <div class="card__icon icon__consult" aria-label="Иконка карточки консультации">
                     </div>
                     <h4 class="card__title">Консультация</h4>
                     <h5 class="card__subtitle">Основные вопросы и направления</h5>
-                    <div class="card__pay card__pay-simple">
+                </div>
+                <div class="card-item">
+                    <div class="card__pay card__pay-simple card__pay--short">
                         <p class="sum">Бесплатно</p>
                         <p class="time time__pay-simple">В любое время</p>
                         <button class="select">
                             <span class="select-text">Выбрать</span>
                         </button>
                     </div>
-                    <ul class="steps-list">
-                        <li class="step-item">В любое удобное время</li>
-                        <li class="step-item">Расскажем о всех нюансах процедуры</li>
-                        <li class="step-item">Предложим варианты решения вашей проблемы</li>
-                        <li class="step-item">Подготовим рекомендаци</li>
-                    </ul>
                 </div>
+                <ul class="steps-list steps-list--short">
+                    <li class="step-item">В любое удобное время</li>
+                    <li class="step-item">Расскажем о всех нюансах процедуры</li>
+                    <li class="step-item">Предложим варианты решения вашей проблемы</li>
+                    <li class="step-item">Подготовим рекомендаци</li>
+                </ul>
             </div>
         </div>
     </div>
