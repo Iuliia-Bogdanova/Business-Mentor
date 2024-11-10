@@ -52,7 +52,7 @@
   .card__pay {
     border-radius: 20px;
     padding: 84px 16px 16px;
-    margin: 0 0px 8px;
+    margin: 0 0 8px;
   }
 
   .card__pay--short {
@@ -106,13 +106,13 @@
     padding: 6px 12px 6px 28px;
   }
 
-.counter-item {
+  .counter-item {
     font-weight: 600;
     font-size: 14px;
     line-height: 140%;
   }
 
-.counter-item::before {
+  .counter-item::before {
     top: 2px;
     left: -18px;
     width: 16px;
@@ -137,18 +137,119 @@
     height: 20px;
   }
 
-.banks-icon {
+  .banks-icon {
     width: 50px;
     height: 22px;
   }
 }
 
 @media (min-width: $breakpoint-laptop) {
-    
+  .tariffs__cards {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 36px;
+  }
+
+  .card__consult {
+    order: 1;
+  }
+
+  .card__base {
+    order: 2;
+  }
+
+  .card__percent {
+    order: 3;
+  }
+
+  .card__base-outer {
+    position: absolute;
+    left: 416px;
+  }
+
+  .card {
+    flex-direction: column;
+    justify-content: start;
+    width: 304px;
+    padding: 24px 12px;
+  }
+
+  .card__heading {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .card__icon[aria-label] {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 12px;
+  }
+
+  .card__subtitle {
+    font-size: 12px;
+    margin-bottom: 24px;
+  }
+
+  .card__base {
+    padding: 4px;
+  }
+
+  .card__base-inner {
+    width: 296px;
+    border-radius: 21px; 
+    padding: 21px 8px;
+  }
+
+  .card-item {
+    width: 100%;
+  }
+
+  .counter {
+    top: -174px;
+    left: 0;
+  }
+
+  .card__pay {
+    border-radius: 24px;
+    padding: 24px 12px;
+  }
+
+  .card__pay-base::before {
+    border-radius: 24px;
+  }
+
+  .sum {
+      font-size: 32px;
+  }
+
+  .time {
+    margin-bottom: 24px;
+  }
+
+  button.select {
+    margin-top: 0;
+  }
+
+  .card__pay-second {
+    border-radius: 16px;
+    padding: 0;
+  }
+
+  .tooltip-content {
+      left: -18px;
+      top: 260px;
+  }
+
+  .steps-list {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 20px;
+  }
 }
 
 @media (min-width: $breakpoint-desktop) {
-    
+  
 }
 
 
