@@ -78,15 +78,11 @@ body {
     .subtitle {
         padding-bottom: 24px;
     }
-
 }
 
-
-
-
-
-
-
-
-
-
+@media (min-width: $breakpoint-desktop-large) {
+    .container {
+        width: 1920px;
+        padding: 0 300px;
+    }
+}
