@@ -201,7 +201,8 @@ button.select {
     padding: 15px 0;
     background: var(--text-color);
     z-index: 10;
-    transition: all 0.3s ease;
+    // transition: all 0.3s ease;
+    transition: transform 0.s ease, opacity 0.3s ease; 
 }
 
 button.select-base {
@@ -215,18 +216,21 @@ button.select-base {
     color: var(--card-bg);
 }
 
-button.select:hover .select-text {
+button.select:hover .select-text,
+button.select:focus .select-text {
     opacity: 0.6;
 }
 
+button.select:focus,
 button.select:active {
-    scale: 0.95;
+    // scale: 0.95;
+    transform: scale(0.95);
 }
 
 button.select:disabled {
     opacity: 0.6;
     pointer-events: none; 
-    z-index: 10;
+    // z-index: 10;
 }
 
 .unclickable {
@@ -266,18 +270,6 @@ button.select:disabled {
     line-height: 110%;
     text-transform: uppercase;
     z-index: 10;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
 }
 
 .tooltip-question[aria-label] {
