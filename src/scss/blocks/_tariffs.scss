@@ -201,8 +201,7 @@ button.select {
     padding: 15px 0;
     background: var(--text-color);
     z-index: 10;
-    // transition: all 0.3s ease;
-    transition: transform 0.s ease, opacity 0.3s ease; 
+    transition: transform 0.3s ease, opacity 0.3s ease; 
 }
 
 button.select-base {
@@ -223,7 +222,6 @@ button.select:focus .select-text {
 
 button.select:focus,
 button.select:active {
-    // scale: 0.95;
     transform: scale(0.95);
 }
 
