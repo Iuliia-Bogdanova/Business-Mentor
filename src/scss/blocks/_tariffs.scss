@@ -253,8 +253,8 @@ button.select:disabled {
     height: 52px;
     border-top-left-radius: 12px; 
     border-bottom-left-radius: 12px; 
-    // background-image: url(../img/card-yellow.png);
-    background-image: url(/img/card-yellow.png);
+    background-image: url(../img/card-yellow.webp);
+    // background-image: url(/img/card-yellow.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -293,8 +293,8 @@ button.select:disabled {
 }
 
 .debt--blue[aria-label] {
-    // background-image: url(../img/card-blue.png);
-    background-image: url(/img/card-blue.png);
+    background-image: url(../img/card-blue.webp);
+    // background-image: url(/img/card-blue.png);
     background-position: left;
 }
 
