@@ -67,13 +67,18 @@ body {
 
 @media (min-width: $breakpoint-desktop) {
     .container {
-        width: 1320px;
+        width: 1440px;
         padding: 0 60px;
     }
 
     .title {
-        font-size: 56px;
+        font-size: 52px;
     }
+
+    .subtitle {
+        padding-bottom: 24px;
+    }
+
 }
 
 
