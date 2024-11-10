@@ -227,8 +227,7 @@ button.select:active {
 
 button.select:disabled {
     opacity: 0.6;
-    pointer-events: none; 
-    // z-index: 10;
+    pointer-events: none;
 }
 
 .unclickable {
